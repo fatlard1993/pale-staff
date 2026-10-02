@@ -1,0 +1,21 @@
+{
+	"description": {
+		"translate": "enchantment.pale-staff-justfatlard.wellspring"
+	},
+	"supported_items": "#pale-staff-justfatlard:enchantable/staff",
+	"exclusive_set": "#pale-staff-justfatlard:exclusive_set/wellspring",
+	"weight": 1,
+	"max_level": 1,
+	"min_cost": {
+		"base": 20,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 8,
+	"slots": [
+		"mainhand"
+	]
+}

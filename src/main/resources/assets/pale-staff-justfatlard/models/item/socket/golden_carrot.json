@@ -1,0 +1,75 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "minecraft:item/golden_carrot",
+		"particle": "minecraft:item/golden_carrot"
+	},
+	"elements": [
+		{
+			"from": [
+				10,
+				10,
+				7.4
+			],
+			"to": [
+				15,
+				13,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						9,
+						5,
+						14,
+						8
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						14,
+						5,
+						9,
+						8
+					]
+				}
+			}
+		},
+		{
+			"from": [
+				11,
+				9,
+				7.4
+			],
+			"to": [
+				14,
+				14,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						10,
+						4,
+						13,
+						9
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						13,
+						4,
+						10,
+						9
+					]
+				}
+			}
+		}
+	]
+}

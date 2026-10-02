@@ -1,0 +1,75 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "minecraft:item/fermented_spider_eye",
+		"particle": "minecraft:item/fermented_spider_eye"
+	},
+	"elements": [
+		{
+			"from": [
+				10,
+				10,
+				7.4
+			],
+			"to": [
+				15,
+				13,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						7,
+						9,
+						12,
+						12
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						12,
+						9,
+						7,
+						12
+					]
+				}
+			}
+		},
+		{
+			"from": [
+				11,
+				9,
+				7.4
+			],
+			"to": [
+				14,
+				14,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						8,
+						8,
+						11,
+						13
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						11,
+						8,
+						8,
+						13
+					]
+				}
+			}
+		}
+	]
+}

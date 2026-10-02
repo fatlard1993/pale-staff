@@ -1,0 +1,79 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "pale-staff-justfatlard:item/pale_staff_gem",
+		"particle": "pale-staff-justfatlard:item/pale_staff_gem"
+	},
+	"elements": [
+		{
+			"from": [
+				10,
+				10,
+				7.4
+			],
+			"to": [
+				15,
+				13,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						10,
+						3,
+						15,
+						6
+					],
+					"tintindex": 0
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						15,
+						3,
+						10,
+						6
+					],
+					"tintindex": 0
+				}
+			}
+		},
+		{
+			"from": [
+				11,
+				9,
+				7.4
+			],
+			"to": [
+				14,
+				14,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						11,
+						2,
+						14,
+						7
+					],
+					"tintindex": 0
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						14,
+						2,
+						11,
+						7
+					],
+					"tintindex": 0
+				}
+			}
+		}
+	]
+}

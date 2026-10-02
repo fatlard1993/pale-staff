@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "pale-staff-justfatlard",
+	"version": "${version}",
+	"name": "Pale Staff",
+	"description": "A staff found in the pale garden, imbued by crafting it with a brewing ingredient, a fire charge or a golden dandelion, and cast at whatever it points at.",
+	"authors": [
+		"justfatlard"
+	],
+	"contact": {
+		"homepage": "https://github.com/fatlard1993/pale-staff",
+		"sources": "https://github.com/fatlard1993/pale-staff",
+		"issues": "https://github.com/fatlard1993/pale-staff/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/pale-staff-justfatlard/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"justfatlard.pale_staff.PaleStaff"
+		]
+	},
+	"mixins": [
+		"pale-staff-justfatlard.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${loaderVersion}",
+		"fabric-api": "${fabricApiVersion}",
+		"minecraft": "${minecraftDependency}",
+		"java": ">=25",
+		"pandorical": ">=15.0.0"
+	}
+}

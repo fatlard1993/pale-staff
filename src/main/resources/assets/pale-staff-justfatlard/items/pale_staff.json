@@ -1,0 +1,449 @@
+{
+	"model": {
+		"type": "minecraft:composite",
+		"models": [
+			{
+				"type": "minecraft:model",
+				"model": "pale-staff-justfatlard:item/pale_staff"
+			},
+			{
+				"type": "minecraft:condition",
+				"property": "minecraft:custom_model_data",
+				"index": 0,
+				"on_true": {
+					"type": "minecraft:select",
+					"property": "minecraft:custom_model_data",
+					"index": 0,
+					"cases": [
+						{
+							"when": "minecraft:blaze_powder",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/blaze_powder"
+							}
+						},
+						{
+							"when": "minecraft:breeze_rod",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/breeze_rod"
+							}
+						},
+						{
+							"when": "minecraft:cobweb",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/cobweb"
+							}
+						},
+						{
+							"when": "minecraft:ghast_tear",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/ghast_tear"
+							}
+						},
+						{
+							"when": "minecraft:glistering_melon_slice",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/glistering_melon_slice"
+							}
+						},
+						{
+							"when": "minecraft:golden_carrot",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/golden_carrot"
+							}
+						},
+						{
+							"when": "minecraft:magma_cream",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/magma_cream"
+							}
+						},
+						{
+							"when": "minecraft:phantom_membrane",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/phantom_membrane"
+							}
+						},
+						{
+							"when": "minecraft:pufferfish",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/pufferfish"
+							}
+						},
+						{
+							"when": "minecraft:rabbit_foot",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/rabbit_foot"
+							}
+						},
+						{
+							"when": "minecraft:spider_eye",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/spider_eye"
+							}
+						},
+						{
+							"when": "minecraft:sugar",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/sugar"
+							}
+						},
+						{
+							"when": "minecraft:fermented_spider_eye",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/fermented_spider_eye"
+							}
+						},
+						{
+							"when": "minecraft:fire_charge",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/fire_charge"
+							}
+						},
+						{
+							"when": "minecraft:golden_dandelion",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/golden_dandelion"
+							}
+						},
+						{
+							"when": "minecraft:wind_charge",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/wind_charge"
+							}
+						},
+						{
+							"when": "minecraft:echo_shard",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/echo_shard"
+							}
+						},
+						{
+							"when": "minecraft:heart_of_the_sea",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/heart_of_the_sea"
+							}
+						},
+						{
+							"when": "minecraft:ender_pearl",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/ender_pearl"
+							}
+						},
+						{
+							"when": "minecraft:shulker_shell",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/shulker_shell"
+							}
+						},
+						{
+							"when": "minecraft:glow_ink_sac",
+							"model": {
+								"type": "minecraft:model",
+								"model": "pale-staff-justfatlard:item/socket/glow_ink_sac"
+							}
+						}
+					],
+					"fallback": {
+						"type": "minecraft:model",
+						"model": "pale-staff-justfatlard:item/socket/gem",
+						"tints": [
+							{
+								"type": "minecraft:custom_model_data",
+								"index": 0,
+								"default": -1
+							}
+						]
+					}
+				},
+				"on_false": {
+					"type": "minecraft:empty"
+				}
+			},
+			{
+				"type": "minecraft:select",
+				"property": "minecraft:display_context",
+				"cases": [
+					{
+						"when": "gui",
+						"model": {
+							"type": "minecraft:condition",
+							"property": "minecraft:custom_model_data",
+							"index": 0,
+							"on_true": {
+								"type": "minecraft:range_dispatch",
+								"property": "minecraft:custom_model_data",
+								"index": 0,
+								"entries": [
+									{
+										"threshold": 0.0001,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_1",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.07702,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_2",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.15395,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_3",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.23087,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_4",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.30779,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_5",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.38472,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_6",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.46164,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_7",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.53856,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_8",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.61548,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_9",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.69241,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_10",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.76933,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_11",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.84625,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_12",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									},
+									{
+										"threshold": 0.92318,
+										"model": {
+											"type": "minecraft:model",
+											"model": "pale-staff-justfatlard:item/charge_bar_13",
+											"tints": [
+												{
+													"type": "minecraft:constant",
+													"value": -1
+												},
+												{
+													"type": "minecraft:custom_model_data",
+													"index": 0,
+													"default": -1
+												}
+											]
+										}
+									}
+								],
+								"fallback": {
+									"type": "minecraft:model",
+									"model": "pale-staff-justfatlard:item/charge_bar_0"
+								}
+							},
+							"on_false": {
+								"type": "minecraft:empty"
+							}
+						}
+					}
+				],
+				"fallback": {
+					"type": "minecraft:empty"
+				}
+			}
+		]
+	}
+}

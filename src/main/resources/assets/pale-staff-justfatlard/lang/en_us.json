@@ -1,0 +1,21 @@
+{
+	"item.pale-staff-justfatlard.pale_staff": "Pale Staff",
+	"tag.item.pale-staff-justfatlard.enchantable.staff": "Pale Staffs",
+	"item.pale-staff-justfatlard.pale_staff.unimbued": "Craft with a brewing ingredient to imbue it",
+	"item.pale-staff-justfatlard.pale_staff.charge": "Charge: %s / %s",
+	"enchantment.pale-staff-justfatlard.potency": "Potency",
+	"enchantment.pale-staff-justfatlard.prolonging": "Prolonging",
+	"enchantment.pale-staff-justfatlard.splash": "Splash",
+	"enchantment.pale-staff-justfatlard.lingering": "Lingering",
+	"enchantment.pale-staff-justfatlard.reservoir": "Reservoir",
+	"item.pale-staff-justfatlard.pale_staff.spell.flame": "Flame: sets what it strikes alight",
+	"item.pale-staff-justfatlard.pale_staff.spell.bloom": "Bloom: cows to mooblooms, hostile mobs to gentle babies, flowers where it lands",
+	"tag.entity_type.pale-staff-justfatlard.bloom_creatures": "Bloom Creatures",
+	"tag.entity_type.pale-staff-justfatlard.bloom_immune": "Bloom Immune",
+	"tag.block.pale-staff-justfatlard.bloom_flowers": "Bloom Flowers",
+	"enchantment.pale-staff-justfatlard.wellspring": "Wellspring",
+	"item.pale-staff-justfatlard.pale_staff.spell.gust": "Gust: a wind charge's burst where it strikes",
+	"item.pale-staff-justfatlard.pale_staff.spell.boom": "Sonic Boom: the warden's, through armor and walls",
+	"item.pale-staff-justfatlard.pale_staff.spell.storm": "Storm: lightning where it strikes",
+	"item.pale-staff-justfatlard.pale_staff.spell.blink": "Blink: you go where it lands, or trade places"
+}

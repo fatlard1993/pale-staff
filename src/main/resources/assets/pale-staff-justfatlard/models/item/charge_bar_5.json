@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "pale-staff-justfatlard:item/charge_bar_back",
+		"layer1": "pale-staff-justfatlard:item/charge_bar_5"
+	}
+}

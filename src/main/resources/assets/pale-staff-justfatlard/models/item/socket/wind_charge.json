@@ -1,0 +1,75 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "minecraft:item/wind_charge",
+		"particle": "minecraft:item/wind_charge"
+	},
+	"elements": [
+		{
+			"from": [
+				10,
+				10,
+				7.4
+			],
+			"to": [
+				15,
+				13,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						4,
+						9,
+						9,
+						12
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						9,
+						9,
+						4,
+						12
+					]
+				}
+			}
+		},
+		{
+			"from": [
+				11,
+				9,
+				7.4
+			],
+			"to": [
+				14,
+				14,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						5,
+						8,
+						8,
+						13
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						8,
+						8,
+						5,
+						13
+					]
+				}
+			}
+		}
+	]
+}

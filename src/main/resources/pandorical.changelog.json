@@ -1,0 +1,15 @@
+{
+	"overview": [
+		"A staff of pale oak, found on the creaking and, very rarely, in the leaves of a pale garden.",
+		"Craft it with what brews a potion, a fire charge or a golden dandelion, then cast: what it carries goes to whatever it points at, or to you when you sneak."
+	],
+	"versions": {
+		"1.0.0": [
+			"The Pale Staff: a creaking may drop one when its heart is broken, and a pale oak leaf in a pale garden, very rarely, broken or decayed.",
+			"Crafted with a brewing ingredient it carries that potion's effect; with a fire charge it burns; with a golden dandelion it makes mooblooms, gentles hostile mobs into babies, and flowers the ground; with a wind charge it bursts as one; with an echo shard it booms as the warden does; with a heart of the sea it calls lightning; with an ender pearl it blinks you where it lands. With Lingering, those leave a trap that goes off on whatever steps in.",
+			"Its socket shows what imbued it, and a charge bar under the item shows the casts left.",
+			"Six enchantments of its own: Potency, Prolonging, Splash, Lingering, Reservoir, and Wellspring, which refills the charge slowly.",
+			"Quick Charge shortens the wait between casts, Multishot and Piercing shape the bolt, and Smite, Bane and Fire Aspect go on the swing."
+		]
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"schemaVersion": 1,
+	"id": "pale-staff-gametest",
+	"version": "1.0.0",
+	"name": "Pale Staff smoke test",
+	"description": "Loads the mod, joins a world, and fails if anything on the way threw.",
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-client-gametest": [
+			"justfatlard.pale_staff.gametest.SmokeTest",
+			"justfatlard.pale_staff.gametest.StaffWorks"
+		]
+	},
+	"depends": {
+		"pale-staff-justfatlard": "*",
+		"fabric-client-gametest-api-v1": "*"
+	}
+}

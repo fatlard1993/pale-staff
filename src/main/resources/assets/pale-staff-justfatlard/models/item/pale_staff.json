@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "pale-staff-justfatlard:item/pale_staff"
+	}
+}

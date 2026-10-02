@@ -1,0 +1,75 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "minecraft:item/rabbit_foot",
+		"particle": "minecraft:item/rabbit_foot"
+	},
+	"elements": [
+		{
+			"from": [
+				10,
+				10,
+				7.4
+			],
+			"to": [
+				15,
+				13,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						8,
+						7,
+						13,
+						10
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						13,
+						7,
+						8,
+						10
+					]
+				}
+			}
+		},
+		{
+			"from": [
+				11,
+				9,
+				7.4
+			],
+			"to": [
+				14,
+				14,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						9,
+						6,
+						12,
+						11
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						12,
+						6,
+						9,
+						11
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,75 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "minecraft:block/cobweb",
+		"particle": "minecraft:block/cobweb"
+	},
+	"elements": [
+		{
+			"from": [
+				10,
+				10,
+				7.4
+			],
+			"to": [
+				15,
+				13,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						4,
+						6,
+						9,
+						9
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						9,
+						6,
+						4,
+						9
+					]
+				}
+			}
+		},
+		{
+			"from": [
+				11,
+				9,
+				7.4
+			],
+			"to": [
+				14,
+				14,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						5,
+						5,
+						8,
+						10
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						8,
+						5,
+						5,
+						10
+					]
+				}
+			}
+		}
+	]
+}

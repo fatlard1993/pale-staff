@@ -1,0 +1,21 @@
+{
+	"description": {
+		"translate": "enchantment.pale-staff-justfatlard.splash"
+	},
+	"supported_items": "#pale-staff-justfatlard:enchantable/staff",
+	"weight": 2,
+	"max_level": 2,
+	"min_cost": {
+		"base": 15,
+		"per_level_above_first": 15
+	},
+	"max_cost": {
+		"base": 45,
+		"per_level_above_first": 15
+	},
+	"anvil_cost": 4,
+	"slots": [
+		"mainhand"
+	],
+	"exclusive_set": "#pale-staff-justfatlard:exclusive_set/burst"
+}

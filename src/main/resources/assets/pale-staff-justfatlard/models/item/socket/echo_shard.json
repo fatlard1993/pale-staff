@@ -1,0 +1,75 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "minecraft:item/echo_shard",
+		"particle": "minecraft:item/echo_shard"
+	},
+	"elements": [
+		{
+			"from": [
+				10,
+				10,
+				7.4
+			],
+			"to": [
+				15,
+				13,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						2,
+						4,
+						7,
+						7
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						7,
+						4,
+						2,
+						7
+					]
+				}
+			}
+		},
+		{
+			"from": [
+				11,
+				9,
+				7.4
+			],
+			"to": [
+				14,
+				14,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						3,
+						3,
+						6,
+						8
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						6,
+						3,
+						3,
+						8
+					]
+				}
+			}
+		}
+	]
+}

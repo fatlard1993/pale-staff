@@ -1,0 +1,75 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "minecraft:item/blaze_powder",
+		"particle": "minecraft:item/blaze_powder"
+	},
+	"elements": [
+		{
+			"from": [
+				10,
+				10,
+				7.4
+			],
+			"to": [
+				15,
+				13,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						8,
+						11,
+						13,
+						14
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						13,
+						11,
+						8,
+						14
+					]
+				}
+			}
+		},
+		{
+			"from": [
+				11,
+				9,
+				7.4
+			],
+			"to": [
+				14,
+				14,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						9,
+						10,
+						12,
+						15
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						12,
+						10,
+						9,
+						15
+					]
+				}
+			}
+		}
+	]
+}

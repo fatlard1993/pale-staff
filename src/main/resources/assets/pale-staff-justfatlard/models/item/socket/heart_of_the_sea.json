@@ -1,0 +1,75 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "minecraft:item/heart_of_the_sea",
+		"particle": "minecraft:item/heart_of_the_sea"
+	},
+	"elements": [
+		{
+			"from": [
+				10,
+				10,
+				7.4
+			],
+			"to": [
+				15,
+				13,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						6,
+						11,
+						11,
+						14
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						11,
+						11,
+						6,
+						14
+					]
+				}
+			}
+		},
+		{
+			"from": [
+				11,
+				9,
+				7.4
+			],
+			"to": [
+				14,
+				14,
+				8.6
+			],
+			"shade": false,
+			"faces": {
+				"south": {
+					"texture": "#layer0",
+					"uv": [
+						7,
+						10,
+						10,
+						15
+					]
+				},
+				"north": {
+					"texture": "#layer0",
+					"uv": [
+						10,
+						10,
+						7,
+						15
+					]
+				}
+			}
+		}
+	]
+}
