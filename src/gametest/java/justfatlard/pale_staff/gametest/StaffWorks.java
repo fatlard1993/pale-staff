@@ -84,6 +84,13 @@ public final class StaffWorks implements FabricClientGameTest {
 			server.runOnServer(s -> flame(s, connection.getServerPlayer(), origin));
 			server.runOnServer(s -> meadow(s.overworld(), origin));
 			server.runOnServer(s -> bloom(s, connection.getServerPlayer(), origin));
+
+			// The picture before anything noisier: no portal mist, no advancement toasts.
+			server.runOnServer(s -> showcase(s, connection.getServerPlayer(), origin));
+			server.runCommand("tp @a %d %d %d 0 15".formatted(origin.getX(), origin.getY(), origin.getZ() - 1));
+			context.waitTicks(30);
+			context.takeScreenshot(TestScreenshotOptions.of("bloom").withSize(1920, 1080).disableCounterPrefix());
+			server.runOnServer(s -> s.overworld().getEntitiesOfClass(Cow.class, new AABB(origin).inflate(10)).forEach(Entity::discard));
 			server.runOnServer(s -> meadow(s.overworld(), origin));
 			server.runOnServer(s -> gust(s, connection.getServerPlayer()));
 			context.waitTicks(40);
@@ -100,10 +107,6 @@ public final class StaffWorks implements FabricClientGameTest {
 			server.runCommand("tp @a %d %d %d 0 0".formatted(origin.getX(), origin.getY(), origin.getZ()));
 			context.waitTicks(5);
 
-			server.runOnServer(s -> showcase(s, connection.getServerPlayer(), origin));
-			server.runCommand("tp @a %d %d %d 0 15".formatted(origin.getX(), origin.getY(), origin.getZ() - 1));
-			context.waitTicks(30);
-			context.takeScreenshot(TestScreenshotOptions.of("bloom").withSize(1920, 1080).disableCounterPrefix());
 
 			// Wellspring: a drained staff, carried, has a charge back within one refill period.
 			server.runOnServer(s -> {

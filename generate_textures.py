@@ -13,7 +13,7 @@ the staff's scale. Anything else, a block or an ingredient from another mod, is 
 in the imbuement's colour.
 
 The moobloom, the cow a golden dandelion bolt makes, is the game's own cow repainted. The icon is
-the staff with a golden dandelion set, on darkened pale oak bark.
+the staff with a golden dandelion set, on darkened pale moss.
 
 The charge bar sits two pixels above where the game draws durability, the same thirteen pixels
 wide, so the two read as a pair. Its fill is white and tinted with the imbuement's colour; there
@@ -39,34 +39,37 @@ MODELS = ASSETS / "models/item"
 
 PALETTE = {
 	".": None,
-	"o": (0x4f, 0x45, 0x42),  # bark outline
-	"d": (0x8f, 0x82, 0x7d),  # shaft shadow
-	"l": (0xc9, 0xbe, 0xb8),  # pale oak
-	"w": (0xec, 0xe6, 0xe2),  # highlight
+	"x": (0x30, 0x29, 0x27),  # crevice
+	"o": (0x52, 0x48, 0x45),  # bark in shadow
+	"d": (0x7c, 0x71, 0x6c),  # bark
+	"m": (0x9c, 0x91, 0x8b),  # bark, half lit
+	"l": (0xbd, 0xb3, 0xad),  # pale oak, lit
+	"w": (0xd9, 0xd2, 0xcd),  # highlight
 	"R": (0xf0, 0x8a, 0x2a),  # resin
-	"m": (0x7c, 0x86, 0x74),  # pale moss
-	"M": (0xa3, 0xad, 0x99),  # pale moss, lit
-	"s": (0x24, 0x1f, 0x1e),  # socket, in shadow
-	"S": (0x3a, 0x33, 0x31),  # socket, catching light
+	"g": (0x8c, 0x97, 0x82),  # pale moss, lit
+	"G": (0x6f, 0x79, 0x66),  # pale moss
+	"S": (0x1a, 0x16, 0x15),  # the hollow, deep
+	"s": (0x2a, 0x24, 0x22),  # the hollow, shallower
+	"h": (0x46, 0x3d, 0x3a),  # a root hair across it
 }
 
 STAFF = """
-...........ooo..
-..........olwlo.
-.........olssslo
-........olssssSo
-........odssssSo
-.......RldsssSSo
-......oldolSSSlo
-.....oldo..ooo..
-....oldo..mMo...
-...oldo...m.....
-..oldo..........
-.oldo...........
-oldo............
-odo.............
-oo..............
-................
+.......o.lo..lo.
+......olmdlo.mdo
+.....oldxdxSSSdl
+....olmdxxSSSSSo
+.....odxdlSShsSo
+....olmdxlSSShso
+...ox.ldxomSssml
+.olmxdoRdxxdmmo.
+.ldox.odx.oxGdx.
+...oldxo...o.g..
+..omldxo...x....
+..lmdxo.........
+.oldxo..........
+.lmdo...........
+ldxo............
+ox..............
 """
 
 # The socket's pixels: five across, corners cut. Rows 2 to 6, columns 10 to 14.
@@ -316,15 +319,15 @@ def moobloom(cow):
 
 
 def icon(jar):
-	"""The staff with a golden dandelion set, on the bark of the pale oak it is cut from, darkened so
-	the pale wood stands off it. Filled to the edge, as most of the suite's icons are, so it holds
-	its own in a list of them."""
-	bark = jar.texture_full("minecraft:block/pale_oak_log").crop((0, 0, 16, 16))
+	"""The staff with a golden dandelion set, on the pale moss of the garden floor, darkened so the
+	pale wood stands off it; bark behind bark lost the staff. Filled to the edge, as most of the
+	suite's icons are, so it holds its own in a list of them."""
+	moss = jar.texture_full("minecraft:block/pale_moss_block").crop((0, 0, 16, 16))
 	frame = Image.new("RGBA", (16, 16))
 	for x in range(16):
 		for y in range(16):
-			r, g, b, a = bark.getpixel((x, y))
-			frame.putpixel((x, y), (r * 45 // 100, g * 45 // 100, b * 45 // 100, 255))
+			r, g, b, a = moss.getpixel((x, y))
+			frame.putpixel((x, y), (r * 55 // 100, g * 55 // 100, b * 55 // 100, 255))
 	frame.alpha_composite(socketed(jar, "golden_dandelion"))
 	return frame.resize((128, 128), Image.NEAREST)
 
