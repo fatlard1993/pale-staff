@@ -6,9 +6,14 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.particles.ColorParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.Component;
+import justfatlard.pandorical.api.PandoricalApi;
+import justfatlard.pandorical.api.Trust;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.entity.Entity;
@@ -72,6 +77,12 @@ public final class Casting {
 	public static boolean cast(ServerLevel level, Player caster, ItemStack staff, boolean atSelf) {
 		Payload payload = payload(staff);
 		if (atSelf && !payload.spell().castsOnSelf) return false;
+		// Fire and lightning are fire: an op who has not trusted the caster with it has the last word.
+		if ((payload.spell() == Spell.FLAME || payload.spell() == Spell.STORM) && !may(caster, Trust.FIRE)) {
+			caster.sendOverlayMessage(Component.translatableWithFallback("pandorical.trust.refused.fire",
+				"An op has not trusted you with fire and lava"));
+			return false;
+		}
 
 		if (payload.spell() == Spell.BOOM) {
 			level.playSound(null, caster.getX(), caster.getY(), caster.getZ(), SoundEvents.WARDEN_SONIC_BOOM,
@@ -192,6 +203,8 @@ public final class Casting {
 
 	/** What one creature struck gets, at full strength; {@code direction} is the way the bolt was going. */
 	private static void touch(ServerLevel level, Player caster, LivingEntity target, Payload payload, Vec3 direction) {
+		// Burning, booming, striking, buffeting or changing it is harm; an effect is sorted one by one.
+		if (payload.spell() != Spell.EFFECT && payload.spell() != Spell.BLINK && !mayHurt(caster, target)) return;
 		switch (payload.spell()) {
 			case EFFECT -> give(level, caster, target, payload, 1);
 			case FLAME -> Flame.strike(level, caster, target, payload.prolonging(), payload.potency());
@@ -214,6 +227,15 @@ public final class Casting {
 			case FLAME, BLOOM, BLINK -> {
 			}
 		}
+	}
+
+	/** What Pandorical says about the caster, who is always a player on a server. */
+	private static boolean may(Player caster, Trust what) {
+		return !(caster instanceof ServerPlayer player) || PandoricalApi.trust().may(player, what);
+	}
+
+	static boolean mayHurt(Player caster, LivingEntity target) {
+		return target == caster || !(caster instanceof ServerPlayer player) || PandoricalApi.trust().mayHurt(player, target);
 	}
 
 	/** Where the bolt meets a block: fire, flowers, a burst, and whatever lingers. */
@@ -279,8 +301,10 @@ public final class Casting {
 
 	private static void give(ServerLevel level, Player caster, LivingEntity target, Payload payload, double scale) {
 		if (!target.isAffectedByPotions()) return;
+		boolean spare = !mayHurt(caster, target);
 		for (MobEffectInstance effect : payload.effects()) {
 			Holder<MobEffect> holder = effect.getEffect();
+			if (spare && holder.value().getCategory() == MobEffectCategory.HARMFUL) continue;
 			if (holder.value().isInstantaneous()) {
 				holder.value().applyInstantaneousEffect(level, caster, caster, target, effect.getAmplifier(), scale);
 			} else {

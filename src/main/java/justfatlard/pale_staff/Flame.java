@@ -33,6 +33,7 @@ public final class Flame {
 
 	/** Light the block struck, or set fire against the face struck. */
 	public static void land(ServerLevel level, Player caster, BlockPos pos, Direction face) {
+		if (!mayChange(level, caster, pos)) return;
 		BlockState state = level.getBlockState(pos);
 		if (CampfireBlock.canLight(state) || CandleBlock.canLight(state) || CandleCakeBlock.canLight(state)) {
 			level.setBlockAndUpdate(pos, state.setValue(BlockStateProperties.LIT, true));
@@ -52,10 +53,15 @@ public final class Flame {
 	}
 
 	private static void ignite(ServerLevel level, Player caster, BlockPos pos, Direction face) {
-		if (!BaseFireBlock.canBePlacedAt(level, pos, face)) return;
+		if (!mayChange(level, caster, pos) || !BaseFireBlock.canBePlacedAt(level, pos, face)) return;
 		level.setBlockAndUpdate(pos, BaseFireBlock.getState(level, pos));
 		level.gameEvent(caster, GameEvent.BLOCK_PLACE, pos);
 		crackle(level, pos);
+	}
+
+	/** Where the caster could have set a block by hand, spawn protection and all. */
+	private static boolean mayChange(ServerLevel level, Player caster, BlockPos pos) {
+		return caster.mayBuild() && level.mayInteract(caster, pos);
 	}
 
 	private static void crackle(ServerLevel level, BlockPos pos) {

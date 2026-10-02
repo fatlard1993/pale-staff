@@ -75,6 +75,15 @@ cast gives, with the durations it actually gives.
 The staff is also a blunt weapon, a stone sword's blow at an axe's pace. It is repaired with resin
 clumps.
 
+### Who it may touch
+
+The staff answers to what ops have trusted its caster with on Pandorical's trust page. Flame and
+Storm need fire; a fire staff will not cast for someone without it. Harm lands only where the
+caster may do harm by hand: another player as PvP allows, both ways round, and somebody else's pet,
+a villager or a named creature only with that trust. A harmful effect skips them and a helpful one
+still lands. Flame also sets fire only where the caster could build. A Sonic Boom or Storm trap
+whose caster is offline goes off on monsters alone.
+
 ## Enchantments
 
 Its own six, which only a staff takes:

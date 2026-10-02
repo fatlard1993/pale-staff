@@ -11,6 +11,7 @@ import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.phys.Vec3;
 import org.jspecify.annotations.Nullable;
 
@@ -98,7 +99,12 @@ public final class Trap {
 
 	private static void spring(ServerLevel level, AreaEffectCloud cloud, @Nullable LivingEntity owner, LivingEntity entity) {
 		int potency = potency(cloud);
-		switch (spell(cloud)) {
+		Spell spell = spell(cloud);
+		// A boom or a strike is harm, and the trap answers for its caster: one who is not here to ask
+		// about is not taken to have been allowed, so with them away it goes off on monsters alone.
+		if ((spell == Spell.BOOM || spell == Spell.STORM) && !(owner instanceof Player player
+				? Casting.mayHurt(player, entity) : entity instanceof Enemy)) return;
+		switch (spell) {
 			case BOOM -> {
 				Vec3 away = entity.position().subtract(cloud.position()).multiply(1, 0, 1);
 				Boom.strike(level, owner != null ? owner : cloud, entity, away.lengthSqr() < 1.0E-4 ? new Vec3(0, 1, 0) : away, potency);
