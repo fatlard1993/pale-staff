@@ -1,9 +1,6 @@
 # Pale Staff
 
-A staff of pale oak, found where the creaking lives. Craft it with what brews a potion, sugar or
-blaze powder or a ghast tear, and it carries that potion's effect; point it and use it, and whatever
-it points at gets it. A fire charge makes it burn, a golden dandelion makes it bloom, and a wind
-charge, an echo shard, a heart of the sea or an ender pearl each make it something else again.
+A staff of pale oak, found where the creaking lives. Craft it with what brews a potion, sugar or blaze powder or a ghast tear, and it carries that potion's effect; point it and use it, and whatever it points at gets it. A fire charge makes it burn, a golden dandelion makes it bloom, and a wind charge, an echo shard, a heart of the sea or an ender pearl each make it something else again.
 
 ## Screenshots
 
@@ -11,11 +8,8 @@ charge, an echo shard, a heart of the sea or an ender pearl each make it somethi
 
 ## Finding one
 
-- **The creaking.** One in twenty creakings drops a staff when a player kills it, and for a
-  creaking bound to a heart, breaking the heart is the kill. Looting on what breaks the heart adds
-  two in a hundred per level.
-- **Pale oak leaves.** One in 2500, from leaves that come down inside a pale garden, broken or
-  decayed. Pale oak grown anywhere else never drops one.
+- **The creaking.** One in twenty creakings drops a staff when a player kills it, and for a creaking bound to a heart, breaking the heart is the kill. Looting on what breaks the heart adds two in a hundred per level.
+- **Pale oak leaves.** One in 2500, from leaves that come down inside a pale garden, broken or decayed. Pale oak grown anywhere else never drops one.
 
 There is no recipe for the staff itself.
 
@@ -35,54 +29,34 @@ Craft the staff with one or more of the same ingredient, anywhere in the grid. E
 | Heart of the sea | **Storm**: lightning where it strikes, any weather, with everything lightning does: pigs to zombified piglins, villagers to witches, creepers charged, fires lit |
 | Ender pearl | **Blink**: you go where the bolt ends, landing short of a wall as a pearl does, or trade places with the creature it hits. It costs a pearl's 5 damage and the same 1-in-20 endermite |
 
-What brews what is read from the game's brewing recipes, so a datapack's or another mod's brews
-imbue the staff too. Potions, foods and flowers do not.
+What brews what is read from the game's brewing recipes, so a datapack's or another mod's brews imbue the staff too. Potions, foods and flowers do not.
 
-More of what it already carries tops it up. Something else replaces it, and the old charge is lost.
-A full staff refuses more of the same.
+More of what it already carries tops it up. Something else replaces it, and the old charge is lost. A full staff refuses more of the same.
 
-The socket on the staff's head shows what it carries: the sugar, the blaze powder, the fire charge.
-An ingredient with no flat sprite, a block or one from another mod, is set as a plain gem in its
-colour.
+The socket on the staff's head shows what it carries: the sugar, the blaze powder, the fire charge. An ingredient with no flat sprite, a block or one from another mod, is set as a plain gem in its colour.
 
 ### Bloom
 
-Everything a golden dandelion bolt makes is a baby, and kept one, the way a golden dandelion keeps
-a baby from growing up. Use a golden dandelion on one by hand to let it grow, as with any other.
+Everything a golden dandelion bolt makes is a baby, and kept one, the way a golden dandelion keeps a baby from growing up. Use a golden dandelion on one by hand to let it grow, as with any other.
 
 - A cow or a mooshroom it strikes becomes a **moobloom**, a buttercup-yellow cow.
-- A hostile mob it strikes has a one-in-four chance (more with Potency) to become a random gentle
-  creature from `#pale-staff-justfatlard:bloom_creatures`. Bosses and wardens, in
-  `#pale-staff-justfatlard:bloom_immune`, never do.
-- Where it meets the ground, flowers from `#pale-staff-justfatlard:bloom_flowers` come up on
-  anything a flower grows on, in a small circle.
+- A hostile mob it strikes has a one-in-four chance (more with Potency) to become a random gentle creature from `#pale-staff-justfatlard:bloom_creatures`. Bosses and wardens, in `#pale-staff-justfatlard:bloom_immune`, never do.
+- Where it meets the ground, flowers from `#pale-staff-justfatlard:bloom_flowers` come up on anything a flower grows on, in a small circle.
 
-Mooblooms never spawn on their own; the moobloom is a cow variant this mod adds, so it breeds,
-milks and leads like any cow.
+Mooblooms never spawn on their own; the moobloom is a cow variant this mod adds, so it breeds, milks and leads like any cow.
 
 ## Casting
 
-- **Use** fires a bolt down your line of sight, up to 24 blocks. The first living thing it strikes
-  gets what the staff carries.
-- **Sneak and use** gives it to you. A Bloom staff flowers the ground at your feet, and a Gust
-  staff bursts there, a wind-charge jump with the fall forgiven as a wind charge's is. Flame, Sonic
-  Boom, Storm and Blink will not be cast on yourself, and cost nothing for trying.
+- **Use** fires a bolt down your line of sight, up to 24 blocks. The first living thing it strikes gets what the staff carries.
+- **Sneak and use** gives it to you. A Bloom staff flowers the ground at your feet, and a Gust staff bursts there, a wind-charge jump with the fall forgiven as a wind charge's is. Flame, Sonic Boom, Storm and Blink will not be cast on yourself, and cost nothing for trying.
 
-Each cast spends one charge and one durability, with a second's wait before the next. The bar
-above the durability bar shows the charge left, in the imbuement's colour. The tooltip lists what a
-cast gives, with the durations it actually gives.
+Each cast spends one charge and one durability, with a second's wait before the next. The bar above the durability bar shows the charge left, in the imbuement's colour. The tooltip lists what a cast gives, with the durations it actually gives.
 
-The staff is also a blunt weapon, a stone sword's blow at an axe's pace. It is repaired with resin
-clumps.
+The staff is also a blunt weapon, a stone sword's blow at an axe's pace. It is repaired with resin clumps.
 
 ### Who it may touch
 
-The staff answers to what ops have trusted its caster with on Pandorical's trust page. Flame and
-Storm need fire; a fire staff will not cast for someone without it. Harm lands only where the
-caster may do harm by hand: another player as PvP allows, both ways round, and somebody else's pet,
-a villager or a named creature only with that trust. A harmful effect skips them and a helpful one
-still lands. Flame also sets fire only where the caster could build. A Sonic Boom or Storm trap
-whose caster is offline goes off on monsters alone.
+The staff answers to what ops have trusted its caster with on Pandorical's trust page. Flame and Storm need fire; a fire staff will not cast for someone without it. Harm lands only where the caster may do harm by hand: another player as PvP allows, both ways round, and somebody else's pet, a villager or a named creature only with that trust. A harmful effect skips them and a helpful one still lands. Flame also sets fire only where the caster could build. A Sonic Boom or Storm trap whose caster is offline goes off on monsters alone.
 
 ## Enchantments
 
@@ -109,22 +83,13 @@ And the vanilla ones it shares with the crossbow and the mace:
 
 ### Traps
 
-With Lingering, a Gust, Sonic Boom or Storm bolt leaves a trap where it lands: a 2-block circle of
-drifting cloud, sculk sparks or electric sparks that sets after half a second and stays 30 seconds
-(longer with Prolonging). Anything that steps in sets it off, a gust under it, a boom into it or
-lightning on it, once each time it comes in. What was already standing there when it set is left alone, and so is the caster. A Sonic Boom bolt
-that hits nothing leaves its trap at the first wall it passed through. Traps are saved with the
-world and still armed when it loads.
+With Lingering, a Gust, Sonic Boom or Storm bolt leaves a trap where it lands: a 2-block circle of drifting cloud, sculk sparks or electric sparks that sets after half a second and stays 30 seconds (longer with Prolonging). Anything that steps in sets it off, a gust under it, a boom into it or lightning on it, once each time it comes in. What was already standing there when it set is left alone, and so is the caster. A Sonic Boom bolt that hits nothing leaves its trap at the first wall it passed through. Traps are saved with the world and still armed when it loads.
 
-A Blink with Lingering leaves a gate of portal mist where you arrive instead: anything that follows
-you through it is sent back to where you set out.
+A Blink with Lingering leaves a gate of portal mist where you arrive instead: anything that follows you through it is sent back to where you set out.
 
 ## Settings
 
-On the Pale Staff page of Pandorical's settings, for ops, and in `config/pale-staff.json`, which is
-written on first run. A change on the page is saved to the file at once and takes hold at once,
-except the two drop chances, which take hold at the next `/reload`. A change to the file needs a
-server restart.
+On the Pale Staff page of Pandorical's settings, for ops, and in `config/pale-staff.json`, which is written on first run. A change on the page is saved to the file at once and takes hold at once, except the two drop chances, which take hold at the next `/reload`. A change to the file needs a server restart.
 
 | Setting | Field | Default | |
 |---|---|---|---|
@@ -138,9 +103,7 @@ server restart.
 
 ## Pandorical
 
-Pale Staff runs on the server, and Pandorical is required: it delivers the staff, its sockets and
-charge bar, the moobloom's coat and the names to every client that joins. Everything else is the
-game's own: the tooltip's effects, the bolt's particles, the clouds and the lightning.
+Pale Staff runs on the server, and Pandorical is required: it delivers the staff, its sockets and charge bar, the moobloom's coat and the names to every client that joins. Everything else is the game's own: the tooltip's effects, the bolt's particles, the clouds and the lightning.
 
 ## Development
 
