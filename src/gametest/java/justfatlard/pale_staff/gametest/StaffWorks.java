@@ -67,9 +67,8 @@ public final class StaffWorks implements FabricClientGameTest {
 			TestServerContext server = world.getServer();
 			TestServerConnection connection = world.getConnection();
 			connection.waitForChunksRender();
-			server.runCommand("gamerule doDaylightCycle false");
-			server.runCommand("gamerule doMobSpawning false");
-			server.runCommand("gamerule doFireTick false");
+			server.runCommand("gamerule advance_time false");
+			server.runCommand("gamerule spawn_mobs false");
 			server.runCommand("time set noon");
 			server.runCommand("gamemode survival @a");
 
