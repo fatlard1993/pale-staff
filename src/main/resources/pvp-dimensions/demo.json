@@ -1,0 +1,129 @@
+{
+  "demo": {
+    "name": "Pale Staff",
+    "icon": "pale-staff-justfatlard:pale_staff",
+    "about": [
+      "A staff of pale oak that carries whatever you craft it with: a potion's effect, a gust of wind, a sonic boom, a blink, or a bloom of flowers.",
+      "Craft each staff with one of the ingredients you've been given, then point and use it; sneak and use to cast on yourself. Strike a cow with a golden dandelion staff to make a moobloom, and try the echo shard on the zombies."
+    ]
+  },
+  "pvp_preset": 1,
+  "needs": [
+    "pale-staff-justfatlard"
+  ],
+  "preset": {
+    "name": "Pale Staff",
+    "icon": "pale-staff-justfatlard:pale_staff",
+    "pvp": false,
+    "game_mode": "survival",
+    "entry_kit": [
+      {
+        "slot": 0,
+        "item": {
+          "id": "pale-staff-justfatlard:pale_staff",
+          "count": 1
+        }
+      },
+      {
+        "slot": 1,
+        "item": {
+          "id": "pale-staff-justfatlard:pale_staff",
+          "count": 1
+        }
+      },
+      {
+        "slot": 2,
+        "item": {
+          "id": "pale-staff-justfatlard:pale_staff",
+          "count": 1
+        }
+      },
+      {
+        "slot": 3,
+        "item": {
+          "id": "pale-staff-justfatlard:pale_staff",
+          "count": 1
+        }
+      },
+      {
+        "slot": 4,
+        "item": {
+          "id": "pale-staff-justfatlard:pale_staff",
+          "count": 1
+        }
+      },
+      {
+        "slot": 8,
+        "item": {
+          "id": "minecraft:bread",
+          "count": 8
+        }
+      },
+      {
+        "slot": 9,
+        "item": {
+          "id": "minecraft:golden_dandelion",
+          "count": 4
+        }
+      },
+      {
+        "slot": 10,
+        "item": {
+          "id": "minecraft:wind_charge",
+          "count": 4
+        }
+      },
+      {
+        "slot": 11,
+        "item": {
+          "id": "minecraft:echo_shard",
+          "count": 4
+        }
+      },
+      {
+        "slot": 12,
+        "item": {
+          "id": "minecraft:ender_pearl",
+          "count": 4
+        }
+      },
+      {
+        "slot": 13,
+        "item": {
+          "id": "minecraft:sugar",
+          "count": 4
+        }
+      },
+      {
+        "slot": 14,
+        "item": {
+          "id": "minecraft:glow_ink_sac",
+          "count": 4
+        }
+      },
+      {
+        "slot": 38,
+        "item": {
+          "id": "minecraft:iron_chestplate",
+          "count": 1
+        }
+      }
+    ],
+    "respawn_kit": "entry",
+    "goal": "time",
+    "mobs": "always",
+    "mob_rarity": "normal",
+    "mob_default": "off",
+    "mob_levels": {
+      "minecraft:zombie": "normal",
+      "minecraft:cow": "common",
+      "minecraft:sheep": "normal"
+    },
+    "life": 15,
+    "size": 3,
+    "world": "overworld",
+    "shape": "natural",
+    "biome": "minecraft:plains",
+    "weather": "clear"
+  }
+}
