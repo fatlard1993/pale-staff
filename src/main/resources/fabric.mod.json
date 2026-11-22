@@ -3,7 +3,7 @@
 	"id": "pale-staff-justfatlard",
 	"version": "${version}",
 	"name": "Pale Staff",
-	"description": "A staff found in the pale garden, imbued by crafting it with a brewing ingredient, a fire charge or a golden dandelion, and cast at whatever it points at.",
+	"description": "A staff from the pale garden, imbued at the crafting table",
 	"authors": [
 		"justfatlard"
 	],
