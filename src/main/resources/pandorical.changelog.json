@@ -4,6 +4,9 @@
 		"Craft it with what brews a potion, a fire charge or a golden dandelion, then cast: what it carries goes to whatever it points at, or to you when you sneak."
 	],
 	"versions": {
+		"1.0.6": [
+			"Describes itself in one short line of what it adds."
+		],
 		"1.0.5": [
 			"A demo to play in PvP Dimensions' onboarding."
 		],
